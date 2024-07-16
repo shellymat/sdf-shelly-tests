@@ -5,16 +5,16 @@ table:
     If no campaigns are running for a certain houe, no campaigns will be logged.
   
   # Uncomment below to begin the "Enriching Your Warehouse" Tutorial >>>>>
-  classifiers:
-    - RETENTION.d7
+  # classifiers:
+    # - RETENTION.d7
   # <<<<<
   
   columns:
     - name: event_id
       description: A unique identifier of the marketing campaign event
       # Uncomment to begin the "Enriching your Warehouse" tutorial >>>>>
-      classifiers:
-        - EVENT.marketing
+      # classifiers:
+      #   - EVENT.marketing
       # <<<<<
       
     - name: event_time
