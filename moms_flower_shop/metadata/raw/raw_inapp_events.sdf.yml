@@ -1,21 +1,21 @@
 table:
   name: raw_inapp_events
-  description: Logged actions (events) that users perform inside the mobile app of mom s flower shop.
+  description: Logged actions (events) that users perform inside the mobile app of mom's flower shop.
   
   # Uncomment below to begin the "Enriching Your Warehouse" Tutorial >>>>>
-  # classifiers:
-    # - RETENTION.d7
+  classifiers:
+    - RETENTION.d7
   # <<<<<
-
+  
   columns:
     - name: index
       description: row_number
       
     - name: event_id
-      description: A unique identifier of an in-app event within mom s flower shop s mobile app
+      description: A unique identifier of an in-app event within mom's flower shop's mobile app
       # Uncomment to begin the "Enriching your Warehouse" tutorial >>>>>
-      # classifiers:
-      #   - EVENT.inapp
+      classifiers:
+        - EVENT.inapp
       # <<<<<
 
     - name: customer_id
@@ -41,4 +41,4 @@ table:
       description: iOS or Android
       
     - name: campaign_id
-      description: The identifier of a marketing campaign that is associated with the install of mom s flower shop mobile app.
+      description: The identifier of a marketing campaign that is associated with the install of mom's flower shop mobile app.
